@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D33B238-0AB5-469A-91A8-80454A9C82D4}</ProjectGuid>
+    <ProjectGuid>{38FA9C0C-D5A6-4F88-8256-0B6CD63F1FEE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LesApp2</RootNamespace>
-    <AssemblyName>LesApp2</AssemblyName>
+    <RootNamespace>LesApp3</RootNamespace>
+    <AssemblyName>LesApp3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PointInVolume.cs" />
-    <Compile Include="PointOnThePlane.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vektor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

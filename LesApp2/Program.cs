@@ -13,9 +13,28 @@ namespace LesApp2
             // Join Unicode
             Console.OutputEncoding = Encoding.Unicode;
 
+            // Створення просторової точки
+            PointOnThePlane xy = new PointOnThePlane()
+            {
+                X = 10,
+                Y = 20
+            };
+            PointInVolume xyz = new PointInVolume()
+            {
+                X = 15,
+                Y = 25,
+                Z = 35
+            };
 
+            // перетворення до іншого типу
+            PointInVolume cxyz = xy;
+            PointOnThePlane cxy = (PointOnThePlane)xyz;
 
-
+            // вивід результатів
+            Console.WriteLine("\n\tPoint xy" + xy.ToString());
+            Console.WriteLine("\n\tPoint xyz" + xyz.ToString());
+            Console.WriteLine("\n\tPoint cxy" + cxy.ToString());
+            Console.WriteLine("\n\tPoint cxyz" + cxyz.ToString());
 
             // repeat
             DoExitOrRepeat();
